@@ -1,7 +1,7 @@
 <h2>Restaurant List</h2>
 <ul>
   {{#each model as |restaurant|}}
-  {{admin-tile restaurant=restaurant destroyRestaurant="destroyRestaurant"}}
+  {{admin-tile restaurant=restaurant destroyRestaurant="destroyRestaurant" update="update"}}
   {{/each}}
 </ul>
 <h3>Add New Restaurant</h3>

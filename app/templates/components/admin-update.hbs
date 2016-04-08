@@ -1,1 +1,21 @@
-{{yield}}
+{{#liquid-if restaurantUpdateForm}}
+  <h3>Update Restaurant</h3>
+    <form class="restaurant-form">
+      <label for="restaurantName">Restaraunt Name</label><br>
+      {{input value=restaurantName id="restaurantName"}}<br>
+
+      <label for="address">Full Address</label><br>
+      {{textarea value=address id="address"}}<br>
+
+      <label for="phone">Phone Number</label><br>
+      {{input value=phone id="phone"}}<br>
+
+      <label for="image">Image URL</label><br>
+      {{input value=image id="image"}}<br>
+
+
+      <button {{action 'update' restaurant}}>Update</button>
+    </form>
+{{else}}
+<button {{action 'restaurantUpdateForm'}}>Update Restaurant</button>
+{{/liquid-if}}
