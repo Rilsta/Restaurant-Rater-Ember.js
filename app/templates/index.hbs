@@ -1,5 +1,7 @@
 <h1>Rate Restaurants, Ruin Lives</h1>
 
 {{#each model as |restaurant|}}
-   <li>{{restaurant-tile restaurant=restaurant}}</li> 
+   <li>{{restaurant-tile restaurant=restaurant}}</li>
 {{/each}}
+
+{{fav-count}}
