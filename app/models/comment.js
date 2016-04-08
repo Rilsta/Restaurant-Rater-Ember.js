@@ -4,5 +4,5 @@ export default DS.Model.extend({
   userName: DS.attr(),
   rating: DS.attr(),
   description: DS.attr(),
-  // restaurant: belongsTo('restaurant', {async: true})
+  restaurant: DS.belongsTo('restaurant', {async: true})
 });

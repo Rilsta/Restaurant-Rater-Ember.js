@@ -1,1 +1,8 @@
-{{outlet}}
+<h2>Restaurant List</h2>
+<ul>
+  {{#each model as |restaurant|}}
+  {{admin-tile restaurant=restaurant}}
+  {{/each}}
+</ul>
+<h3>Add New Restaurant</h3>
+{{admin-new save="save"}}

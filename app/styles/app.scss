@@ -2,14 +2,18 @@ body{
   font-family: sans-serif;
 }
 
-.main-container{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid red;
-  height: 100vh;
+img{
+  width: 200px;
 }
+
+// .main-container{
+//   display: flex;
+//   flex-flow: column wrap;
+//   justify-content: space-between;
+//   align-items: center;
+//   border: 1px solid red;
+//   height: 100vh;
+// }
 
 .nav-bar{
   display: flex;
