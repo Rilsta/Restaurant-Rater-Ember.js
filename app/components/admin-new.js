@@ -14,10 +14,10 @@ export default Ember.Component.extend({
         image: this.get('image'),
       };
       this.set('addNewRestaurant', false);
-      this.set('restaurantName', undefined);
-      this.set('address', undefined);
-      this.set('phone', undefined);
-      this.set('image', undefined);
+      this.set('restaurantName', "");
+      this.set('address', "");
+      this.set('phone', "");
+      this.set('image', "");
       this.sendAction('save', params);
     }
   }
