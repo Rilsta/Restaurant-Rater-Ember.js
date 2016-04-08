@@ -22,6 +22,10 @@ export default Ember.Route.extend({
         });
         comment.save();
         this.transitionTo('restaurant');
-      },
+    },
+    destroyComment(comment) {
+      comment.destroyRecord();
+      this.transitionTo('restaurant');
+    },
   }
 });
