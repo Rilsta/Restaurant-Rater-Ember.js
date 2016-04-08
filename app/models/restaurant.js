@@ -5,5 +5,5 @@ export default DS.Model.extend({
   address: DS.attr(),
   phone: DS.attr(),
   image: DS.attr(),
-  comments: hasMany('comment', {async: true})
+  // comments: hasMany('comment', {async: true})
 });

@@ -1,3 +1,15 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="main-container">
+  <div class="nav-bar">
+    {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'admin'}}Admin{{/link-to}}
+    <!-- {{#link-to 'Favorites'}}Favorites{{/link-to}} -->
+  </div>
 
-{{outlet}}
+  <div class="container-body">
+    {{outlet}}
+  </div>
+
+  <div class="footer">
+    No Rights Reserved, We're Booked For The Evening 2016
+  </div>
+</div>
