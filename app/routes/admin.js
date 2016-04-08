@@ -10,5 +10,9 @@ export default Ember.Route.extend({
       newRestaurant.save();
       this.transitionTo('admin');
     },
+    destroyRestaurant(restaurant) {
+      restaurant.destroyRecord();
+      this.transitionTo('admin');
+    }
   }
 });
