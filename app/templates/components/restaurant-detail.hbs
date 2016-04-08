@@ -4,3 +4,9 @@
   <li>{{restaurant.address}}</li>
   <li>{{restaurant.phone}}</li>
 </ul>
+
+<ul>
+  {{#each restaurant.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
