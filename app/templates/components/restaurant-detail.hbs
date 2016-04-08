@@ -5,6 +5,8 @@
   <li>{{restaurant.phone}}</li>
 </ul>
 
+<button {{action 'addToFavorites' restaurant}}>Add To Favorites</button>
+
 <ul>
   {{#each restaurant.comments as |comment|}}
     {{comment-tile comment=comment update="update" destroyComment="destroyComment"}}

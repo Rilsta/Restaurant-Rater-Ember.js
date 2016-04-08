@@ -1,0 +1,9 @@
+{{#each favoriteRestaurants.favorites as |favorite|}}
+  <ul>
+    <h2>{{favorite.restaurantName}}</h2><br>
+    <img src="{{favorite.image}}" alt="restaurant picture" /><br>
+    Address: {{favorite.address}}<br>
+    Phone: {{favorite.phone}}<br>
+    <hr>
+  </ul>
+{{/each}}
