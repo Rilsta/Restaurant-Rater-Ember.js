@@ -1,16 +1,17 @@
 {{#liquid-if addNewComment}}
   <h3>New Comment:</h3>
-    <form class="comment-form" action="index.html" method="post">
+    <form class="comment-form">
       <label for="userName">Username</label><br>
-      {{input value="userName" id="userName"}}<br>
+      {{input value=userName id="userName"}}<br>
 
       <label for="description">Comment:</label><br>
-      {{textarea value="description" id="description"}}<br>
+      {{textarea value=description id="description"}}<br>
 
       <label for="rating">Rate 1 through 10</label><br>
-      {{input value="rating" id="rating"}}<br>
+      {{input value=rating id="rating"}}<br>
 
       <button {{action 'save' restaurant}}>Save</button>
     </form>
 {{else}}
+  <button {{action 'commentFormShow'}}>New Comment</button>
 {{/liquid-if}}
