@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.sendAction('update', comment, params);
     },
     destroyComment(comment) {
-      this.sendAction('destroyComment', comment)
+      this.sendAction('destroyComment', comment);
     },
     addToFavorites(favorite) {
       this.get('favoriteRestaurants').add(favorite);
