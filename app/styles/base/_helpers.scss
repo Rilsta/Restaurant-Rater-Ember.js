@@ -3,7 +3,8 @@
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .container-body{

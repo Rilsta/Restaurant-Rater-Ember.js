@@ -1,7 +1,9 @@
-<h1>Snack and Scoff</h1>
+<h1>Snack &amp; Scoff</h1>
 
 {{#each model as |restaurant|}}
    <li>{{restaurant-tile restaurant=restaurant}}</li>
 {{/each}}
 
-{{#link-to 'favorites'}}{{fav-count}}{{/link-to}}
+<div class="favorites-link">
+  {{#link-to 'favorites'}}{{fav-count}}{{/link-to}}
+</div>
