@@ -1,7 +1,17 @@
 body{
   font-family: sans-serif;
+  background: $canary;
+  color: $black;
 }
 
 img{
   width: 200px;
+}
+
+a{
+  text-decoration: none;
+  color: $salmon;
+  &:hover{
+    color: $persian-green;
+  }
 }

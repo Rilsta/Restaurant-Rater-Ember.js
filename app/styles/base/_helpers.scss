@@ -3,5 +3,12 @@
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  height: 100vh;
+}
+
+.container-body{
+  background: $caper;
+  align-self: flex-start;
+  flex-grow: 2;
+  padding: 0 50px;
 }
