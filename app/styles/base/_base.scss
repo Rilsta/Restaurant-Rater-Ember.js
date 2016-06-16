@@ -10,6 +10,14 @@ h1{
   font-family: 'Marcellus', serif;
   font-size: 2.2em;
   font-weight: normal;
+  border-bottom: 1px solid $black;
+}
+h3{
+  margin: 20px;
+  font-family: 'Marcellus', serif;
+  flex-grow: 1;
+  font-weight: normal;
+  color: $white;
 }
 
 img{
@@ -23,8 +31,9 @@ a{
     color: $persian-green;
   }
 }
-
-.fa-home{
-  font-size: 40px;
-  flex-grow: 2;
+button{
+  border: none;
+  padding: 10px;
+  background: $salmon;
+  color: $white;
 }

@@ -8,9 +8,22 @@
 }
 
 .container-body{
-  background: $caper;
   align-self: flex-start;
   flex-grow: 2;
   padding: 0 50px;
-  max-width: 250px;
+  border: 1px solid red;
+}
+
+.m-gallery{
+  border: 1px solid blue;
+  display: flex;
+  flex-flow: row wrap;
+  li{
+    list-style: none;
+    margin: 10px;
+  }
+}
+
+.g-title{
+  position: absolute;
 }
