@@ -1,9 +1,10 @@
 {{#link-to 'restaurant' restaurant.id}}
 {{restaurant-popularity restaurant}}
 <div class="g-thumbnail">
-  <img src="{{restaurant.image}}" alt="{{restaurant.restaurantName}}"/>
-  <div class="g-title">
+  <img src="{{restaurant.image}}" alt="restaurant image" />
+  <div class="g-overlay">
     <h3>{{restaurant.restaurantName}}</h3>
   </div>
 </div>
 {{/link-to}}
+<button {{action 'addToFavorites' restaurant}}>Add To Favorites</button>
